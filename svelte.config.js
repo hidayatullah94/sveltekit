@@ -1,23 +1,17 @@
-import adapter from 'svelte-adapter-github';
-
-const dev = process.env.NODE_ENV === 'development';
+import static_adapter from '@sveltejs/adapter-static';
+import sveltePreprocess from 'svelte-preprocess';
+import node from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	preprocess: sveltePreprocess(),
 	kit: {
-		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
-			domain: null,
-			jekyll: false,
-			fallback: null,
-			precompress: false,
-			fallback: '200.html'
-		}),
+		adapter: static_adapter(),
 		paths: {
-			base: dev ? '' : '/https://github.com/hidayatullah94/sveltekit',
-			assets: ''
-		}
+			base: '/sveltekit',
+			assets: '/sveltekit'
+		},
+		target: '#svelte'
 	}
 };
 
