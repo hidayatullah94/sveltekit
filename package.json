@@ -9,7 +9,7 @@
 		"prepare": "svelte-kit sync",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"deploy": "npm run build && npx gh-pages -d build"
+		"deploy": "npm run build && npx gh-pages -d .svelte-kit/static/build -t true"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -18,7 +18,8 @@
 		"gh-pages": "^4.0.0",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.44.0"
+		"svelte": "^3.44.0",
+		"svelte-adapter-github": "^0.0.1-next.0"
 	},
 	"type": "module"
 }
