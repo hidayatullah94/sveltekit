@@ -8,7 +8,7 @@ const config = {
 	kit: {
 		adapter: static_adapter(),
 		paths: {
-			base: '/https://hidayatullah94.github.io/sveltekit/',
+			base: '/https://hidayatullah94.github.io/sveltekit',
 			assets: ''
 		}
 	}
