@@ -9,9 +9,8 @@ const config = {
 		adapter: static_adapter(),
 		paths: {
 			base: '/sveltekit',
-			assets: '/sveltekit'
-		},
-		target: '#svelte'
+			assets: ''
+		}
 	}
 };
 
