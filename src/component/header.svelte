@@ -1,10 +1,9 @@
 <script>
-	import { base } from '$app/paths';
 </script>
 
 <nav class="navbar fixed-top navbar-expand-lg bg-info">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="{base}/">Navbar</a>
+		<a class="navbar-brand" href="/">Navbar</a>
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -22,13 +21,13 @@
 					<a class="nav-link active" aria-current="page" href="/">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{base}/about">About</a>
+					<a class="nav-link" href="/about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{base}/blog">Blog</a>
+					<a class="nav-link" href="/blog">Blog</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{base}/user">User</a>
+					<a class="nav-link" href="/user">User</a>
 				</li>
 			</ul>
 		</div>
