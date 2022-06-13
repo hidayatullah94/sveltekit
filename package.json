@@ -22,7 +22,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@srexi/purecounterjs": "^1.5.0",
 		"@sveltejs/adapter-node": "^1.0.0-next.78",
+		"install": "^0.13.0",
+		"npm": "^8.12.1",
 		"svelte-preprocess": "^4.10.7"
 	}
 }
